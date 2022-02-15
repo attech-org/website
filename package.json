@@ -16,16 +16,18 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "type-check": "tsc",
-    "lint": "eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\"",
-    "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\" --write",
+    "lint": "eslint --ignore-path .gitignore \"*.+(ts|js|tsx)\"",
+    "format": "prettier --ignore-path .gitignore \"*.+(ts|js|tsx)\" --write",
     "postinstall": "husky install",
     "test": "jest",
-    "commit": "cz"
+    "commit": "cz",
+    "lint-staged": "lint-staged",
+    "commitlint": "commitlint"
   },
   "lint-staged": {
-    "./src/**/*.{ts,js,jsx,tsx}": [
-      "yarn lint --fix",
-      "yarn format"
+    "*.{ts,js,jsx,tsx}": [
+      "npm run lint --fix",
+      "npm run format"
     ]
   },
   "dependencies": {
