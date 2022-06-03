@@ -1,16 +1,26 @@
 import React from 'react';
+import Layout from '@/components/Layout';
+import SectionWithPhotoFirst from '@/components/SectionWithPhotoFirst';
+import SectionWithPhotoSecond from '@/components/SectionWithPhotoSecond';
+import SectionWithPhotoThird from '@/components/SectionWithPhotoThird';
+import SectionMenu from '@/components/SectionMenu';
+import SectionParagraph from '@/components/SectionParagraph';
+import SectionWithPhotoFourth from '@/components/SectionWithPhotoFourth';
+import SectionFeatures from '@/components/SectionFeatures';
+import SectionHeroSecond from '@/components/SectionHeroSecond';
+import SectionHeroFirst from '@/components/SectionHeroFirst';
 
-import Title from '@/components/Title';
-
-export default function Home() {
-  return (
-    <main>
-      <Title>Hello TypeScript!</Title>
-      <p>A TypeScript starter for Gatsby. Great for advanced users.</p>
-      <p>
-        Follow me on Twitter (
-        <a href="https://twitter.com/jpedroschmitz">@jpedroschmitz</a>)
-      </p>
-    </main>
-  );
-}
+const Home: React.FunctionComponent = () => (
+  <Layout>
+    <SectionHeroFirst />
+    <SectionWithPhotoFirst />
+    <SectionWithPhotoSecond />
+    <SectionWithPhotoThird />
+    <SectionMenu />
+    <SectionParagraph />
+    <SectionWithPhotoFourth />
+    <SectionFeatures />
+    <SectionHeroSecond />
+  </Layout>
+);
+export default Home;
