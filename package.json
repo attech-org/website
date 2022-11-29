@@ -13,6 +13,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
+    "ts:generate": "netlify-ts static/admin/config.yml src/cms.d.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
@@ -36,6 +37,7 @@
     "@types/node": "^18.11.9",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.8",
+    "netlify-ts": "^2.0.0",
     "typescript": "^4.8.4"
   }
 }

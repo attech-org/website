@@ -1,0 +1,29 @@
+backend:
+  name: test-repo
+
+media_folder: static/assets
+public_folder: /assets
+editor:
+  preview: false
+
+collections:
+  - name: pages
+    label: Pages
+    files:
+      - name: home
+        label: Home Page
+        file: content/pages/home.yml
+        fields:
+          - label: Document Title (SEO)
+            name: docTitle
+            widget: string
+          - label: Section 1
+            name: section1
+            widget: object
+            fields:
+              - label: Title1
+                name: title1
+                widget: string
+              - label: Title2
+                name: title2
+                widget: string
