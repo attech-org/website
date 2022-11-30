@@ -30,6 +30,3 @@ collections:
                   - label: Item 2
                     name: item2
                     widget: string
-                  - label: Item 2
-                    name: item2
-                    widget: string
