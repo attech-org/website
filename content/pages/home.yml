@@ -1,4 +1,6 @@
 docTitle: Home Page
-section1:
-  title1: Title for David
-  title2: Title 2 for test purposes
+header:
+  navigation:
+    item1: What you get
+    item2: What you get
+    item3: What you get

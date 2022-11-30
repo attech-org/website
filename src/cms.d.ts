@@ -1,12 +1,17 @@
 /* eslint-disable */
 /* tslint:disable */
 
-export interface HomePage_Section1 {
-  title1: string;
-  title2: string;
+export interface HomePage_Header_Navigation {
+  item1: string;
+  item2: string;
+  item2: string;
+}
+
+export interface HomePage_Header {
+  navigation: HomePage_Header_Navigation;
 }
 
 export interface HomePage {
   docTitle: string;
-  section1: HomePage_Section1;
+  header: HomePage_Header;
 }

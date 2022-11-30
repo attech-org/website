@@ -15,16 +15,21 @@ collections:
         label: Home Page
         file: content/pages/home.yml
         fields:
-          - label: Document Title (SEO)
-            name: docTitle
+          - name: docTitle
             widget: string
-          - label: Section 1
-            name: section1
+          - name: header
             widget: object
             fields:
-              - label: Title1
-                name: title1
-                widget: string
-              - label: Title2
-                name: title2
-                widget: string
+              - label: Navigation
+                name: navigation
+                widget: object
+                fields:
+                  - label: Item 1
+                    name: item1
+                    widget: string
+                  - label: Item 2
+                    name: item2
+                    widget: string
+                  - label: Item 2
+                    name: item2
+                    widget: string

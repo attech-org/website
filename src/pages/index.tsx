@@ -139,13 +139,14 @@ const links = [
 ]
 
 const IndexPage: React.FC<PageProps> = () => {
-  const { docTitle, section1 } = content as HomePage;
+  const { docTitle, header } = content as HomePage;
   return (
     <main style={pageStyles}>
       <h1 style={headingStyles}>
         {docTitle}
         <br />
-        <span style={headingAccentStyles}>— {section1.title1}! 🎉🎉🎉</span>
+        <h1 style={headingAccentStyles}>What you get!</h1>
+        <span style={headingAccentStyles}>— {header.navigation.item2}! 🎉🎉🎉</span>
       </h1>
       <p style={paragraphStyles}>
         Edit <code style={codeStyles}>src/pages/index.tsx</code> to see this page
