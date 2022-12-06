@@ -19,7 +19,12 @@ const Section = styled.section`
   display: flex;
   flex-wrap: wrap;
   gap: 5rem;
+  @media screen and (max-width: 700px) {
+    width: calc(100% - 2rem * 2);
+    padding: 2rem;
+  }
 `;
+
 const Block = styled.div`
   flex-basis: calc(50% - 5rem * 2);
   flex-grow: 1;
@@ -42,74 +47,44 @@ const P = styled.p`
 `;
 
 const IndexPage: React.FC<PageProps> = () => {
-  // const { docTitle, header } = content as HomePage;
+  const { docTitle, section1, section2, section3, section4 } =
+    content as HomePage;
   return (
     <PageContainer>
       <Section>
         <Block>
-          <H1>First section left title</H1>
-          <P>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad atque
-            veritatis quaerat eligendi mollitia tenetur, quas officiis, nisi
-            adipisci aperiam vel numquam id deleniti delectus repellendus nulla,
-            iste autem! Sit?
-          </P>
+          <H1>{section1.title}</H1>
+          <P>{section1.description}</P>
         </Block>
         <Block>
-          <img src="/icons/icon-512x512.png" alt="" />
+          <img src={section1.image} alt={section1.title} />
         </Block>
       </Section>
       <Section>
         <Block>
-          <img src="/icons/icon-512x512.png" alt="" />
+          <img src={section2.image} alt={section2.title} />
         </Block>
         <Block>
-          <H1>First section left title</H1>
-          <P>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad atque
-            veritatis quaerat eligendi mollitia tenetur, quas officiis, nisi
-            adipisci aperiam vel numquam id deleniti delectus repellendus nulla,
-            iste autem! Sit?
-          </P>
+          <H1>{section2.title}</H1>
+          <P>{section2.description}</P>
         </Block>
       </Section>
       <Section>
         <Block>
-          <H1>First section left title</H1>
-          <P>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad atque
-            veritatis quaerat eligendi mollitia tenetur, quas officiis, nisi
-            adipisci aperiam vel numquam id deleniti delectus repellendus nulla,
-            iste autem! Sit?
-          </P>
+          <H1>{section3.title}</H1>
+          <P>{section3.description}</P>
         </Block>
         <Block>
-          <img src="/icons/icon-512x512.png" alt="" />
+          <img src={section3.image} alt={section3.title} />
         </Block>
       </Section>
       <Section>
         <Block>
-          <img src="/icons/icon-512x512.png" alt="" />
+          <img src={section4.image} alt={section4.title} />
         </Block>
         <Block>
-          <H1>First section left title</H1>
-          <P>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad atque
-            veritatis quaerat eligendi mollitia tenetur, quas officiis, nisi
-            adipisci aperiam vel numquam id deleniti delectus repellendus nulla,
-            iste autem! Sit?
-          </P>
-        </Block>
-      </Section>
-      <Section>
-        <Block>
-          <H1>First section left title</H1>
-          <P>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad atque
-            veritatis quaerat eligendi mollitia tenetur, quas officiis, nisi
-            adipisci aperiam vel numquam id deleniti delectus repellendus nulla,
-            iste autem! Sit?
-          </P>
+          <H1>{section4.title}</H1>
+          <P>{section4.description}</P>
         </Block>
       </Section>
     </PageContainer>

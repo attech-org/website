@@ -17,16 +17,39 @@ collections:
         fields:
           - name: docTitle
             widget: string
-          - name: header
+          - name: section1
             widget: object
             fields:
-              - label: Navigation
-                name: navigation
-                widget: object
-                fields:
-                  - label: Item 1
-                    name: item1
-                    widget: string
-                  - label: Item 2
-                    name: item2
-                    widget: string
+              - name: title
+                widget: string
+              - name: description
+                widget: string
+              - name: image
+                widget: image
+          - name: section2
+            widget: object
+            fields:
+              - name: title
+                widget: string
+              - name: description
+                widget: string
+              - name: image
+                widget: image
+          - name: section3
+            widget: object
+            fields:
+              - name: title
+                widget: string
+              - name: description
+                widget: string
+              - name: image
+                widget: image
+          - name: section4
+            widget: object
+            fields:
+              - name: title
+                widget: string
+              - name: description
+                widget: string
+              - name: image
+                widget: image
