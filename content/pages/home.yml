@@ -1,4 +1,16 @@
 docTitle: attech.agency
+header:
+  button: Contact us
+  nav:
+    item1: What u get
+    item2: How it works
+    item3: Customer stories
+  logo: /assets/icon.png
+banner:
+  title: Track ur cash flow in real time
+  description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae repellat esse veritatis voluptate incidunt quis nesciunt saepe nemo vel reiciendis. Repudiandae, doloribus nihil veniam exercitationem perspiciatis itaque inventore quo vitae?
+  button: Contact us
+  image: /assets/icon.png
 section1:
   title: Impressive result
   description: They know those things. I can assure you it is not. Let us find that common stake we all have in one another, and let our politics reflect that spirit as well. And that's to be expected. Much has been made of the fact that an African-American with the name Barack Hussein Obama could be elected President.
