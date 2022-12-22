@@ -17,6 +17,33 @@ collections:
         fields:
           - name: docTitle
             widget: string
+          - name: header
+            widget: object
+            fields:
+              - name: logo
+                widget: image
+              - name: nav
+                widget: object
+                fields:
+                  - name: item1
+                    widget: string
+                  - name: item2
+                    widget: string
+                  - name: item3
+                    widget: string
+              - name: button
+                widget: string
+          - name: banner
+            widget: object
+            fields:
+              - name: title
+                widget: string
+              - name: description
+                widget: string
+              - name: button
+                widget: string
+              - name: image
+                widget: image
           - name: section1
             widget: object
             fields:

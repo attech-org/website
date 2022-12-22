@@ -6,6 +6,11 @@ header:
     item2: How it works
     item3: Customer stories
   logo: /assets/icon.png
+banner:
+  title: Track ur cash flow in real time
+  description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae repellat esse veritatis voluptate incidunt quis nesciunt saepe nemo vel reiciendis. Repudiandae, doloribus nihil veniam exercitationem perspiciatis itaque inventore quo vitae?
+  button: Contact us
+  image: /assets/icon.png
 section1:
   title: Impressive result
   description: They know those things. I can assure you it is not. Let us find
