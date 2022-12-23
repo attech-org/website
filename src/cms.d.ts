@@ -44,6 +44,11 @@ export interface HomePage_section4 {
   image: string;
 }
 
+export interface HomePage_section5 {
+  title: string;
+  button: string;
+}
+
 export interface HomePage {
   docTitle: string;
   header: HomePage_header;
@@ -52,4 +57,5 @@ export interface HomePage {
   section2: HomePage_section2;
   section3: HomePage_section3;
   section4: HomePage_section4;
+  section5: HomePage_section5;
 }

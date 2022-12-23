@@ -33,11 +33,26 @@ const Block = styled.div`
   justify-content: center;
   row-gap: 1.5rem;
 `
+const GetStartedBlock = styled(Block)`
+  background: linear-gradient(to right, #5104fe, #946efd);
+  border-radius: 1rem;
+  padding: 5rem 1rem;
+  row-gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+`
+
 const H1 = styled.h1`
-  font-size: 3rem;
+  font-size: 4rem;
+  @media screen and (max-width: 700px) {
+    font-size: 3rem;
+  }
 `
 const H2 = styled.h2`
-  font-size: 2rem;
+  font-size: 3rem;
 `
 const H3 = styled.h2`
   font-size: 1.5rem;
@@ -92,10 +107,14 @@ const Button = styled.button`
 const Main = styled.main`
   margin-top: 10rem;
 `
-
-const ButtonSecondary = styled(Button)`
-  border-radius: 0.3rem;
-  padding: 1rem 2rem;
+const ButtonPrimary = styled(Button)`
+  border-radius: 0.5rem;
+  padding: 1.1rem 2.3rem;
+  align-self: start;
+  box-shadow: 0.1rem 0.2rem 0.2rem #464ffa;
+`
+const ButtonSecondary = styled(ButtonPrimary)`
+  align-self: auto;
 `
 const Logo = styled.img`
   cursor: pointer;
@@ -106,7 +125,7 @@ const Logo = styled.img`
 const Footer = styled.footer``
 
 const IndexPage: React.FC<PageProps> = () => {
-  const { header, banner, section1, section2, section3, section4 } =
+  const { header, banner, section1, section2, section3, section4, section5 } =
     content as HomePage
   return (
     <PageContainer>
@@ -125,7 +144,7 @@ const IndexPage: React.FC<PageProps> = () => {
           <Block>
             <H1>{banner.title}</H1>
             <P>{banner.description}</P>
-            <ButtonSecondary>{banner.button}</ButtonSecondary>
+            <ButtonPrimary>{banner.button}</ButtonPrimary>
           </Block>
           <Block>
             <img src={banner.image} alt={banner.title} />
@@ -134,7 +153,7 @@ const IndexPage: React.FC<PageProps> = () => {
 
         <Section>
           <Block>
-            <H1>{section1.title}</H1>
+            <H2>{section1.title}</H2>
             <P>{section1.description}</P>
           </Block>
           <Block>
@@ -146,13 +165,13 @@ const IndexPage: React.FC<PageProps> = () => {
             <img src={section2.image} alt={section2.title} />
           </Block>
           <Block>
-            <H1>{section2.title}</H1>
+            <H2>{section2.title}</H2>
             <P>{section2.description}</P>
           </Block>
         </Section>
         <Section>
           <Block>
-            <H1>{section3.title}</H1>
+            <H2>{section3.title}</H2>
             <P>{section3.description}</P>
           </Block>
           <Block>
@@ -164,9 +183,16 @@ const IndexPage: React.FC<PageProps> = () => {
             <img src={section4.image} alt={section4.title} />
           </Block>
           <Block>
-            <H1>{section4.title}</H1>
+            <H2>{section4.title}</H2>
             <P>{section4.description}</P>
           </Block>
+        </Section>
+
+        <Section>
+          <GetStartedBlock>
+            <H1>{section5.title}</H1>
+            <ButtonSecondary>{section5.button}</ButtonSecondary>
+          </GetStartedBlock>
         </Section>
       </Main>
       <Footer />

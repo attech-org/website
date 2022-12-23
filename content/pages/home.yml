@@ -10,7 +10,7 @@ banner:
   title: Track ur cash flow in real time
   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae repellat esse veritatis voluptate incidunt quis nesciunt saepe nemo vel reiciendis. Repudiandae, doloribus nihil veniam exercitationem perspiciatis itaque inventore quo vitae?
   button: Contact us
-  image: /assets/icon.png
+  image: /assets/pc.png
 section1:
   title: Impressive result
   description: They know those things. I can assure you it is not. Let us find
@@ -21,7 +21,8 @@ section1:
   image: /assets/pc.png
 section2:
   title: Amazing history
-  description: Again and again, we've seen him make tough choices when easier ones
+  description:
+    Again and again, we've seen him make tough choices when easier ones
     were available. Tomorrow, I will visit Buchenwald, which was part of a
     network of camps where Jews were enslaved, tortured, shot and gassed to
     death by the Third Reich. The fourth issue that I will address is democracy.
@@ -47,3 +48,6 @@ section4:
     soldiers who re-enlist after losing a limb, in the good neighbors who take a
     stranger in when a hurricane strikes and the floodwaters rise.
   image: /assets/wow.png
+section5:
+  title: Get started with Purebank today
+  button: Book a demo

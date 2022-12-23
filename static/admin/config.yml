@@ -80,3 +80,10 @@ collections:
                 widget: string
               - name: image
                 widget: image
+          - name: section5
+            widget: object
+            fields:
+              - name: title
+                widget: string
+              - name: button
+                widget: string
